@@ -4,7 +4,9 @@ const grid = document.querySelector('.grid');
 for (let r = 0; r < GRID_SIZE; r++) {
   for (let c = 0; c < GRID_SIZE; c++) {
     const child = document.createElement('div');
-    child.classList.add('px', r, c);
+    child.addEventListener('mouseover', (e) => {
+      e.target.classList.add('fill');
+    });
     grid.appendChild(child);
   }
 }
