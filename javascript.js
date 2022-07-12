@@ -1,5 +1,5 @@
 const GRID_SIZE = 600;
-const promptBtn = document.querySelector('.prompt');
+const promptBtn = document.querySelector('button');
 const grid = document.querySelector('.grid');
 let gridCells = 16;
 
